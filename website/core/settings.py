@@ -25,7 +25,7 @@ SECRET_KEY = 'ne)a%uzjs0g%1ywaqeauh0a7y+4piz_c549#lq#mi#vblt#!t+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['ravi-glx20.herokuapp.com','0.0.0.0','127.0.0.1']
 
 
 # Application definition
