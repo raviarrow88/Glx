@@ -48,7 +48,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+'
 ]
+
+
 
 ROOT_URLCONF = 'core.urls'
 
@@ -141,3 +145,5 @@ DATABASES = {
         }
 
 GEOCODE_API_KEY = 'Q3SOLWfxmg7xFcmFt3zFctzQ0KGg1DYHpSpicQoM8aA'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
