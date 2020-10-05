@@ -9,6 +9,7 @@ future==0.18.2
 geocoder==1.38.1
 geographiclib==1.50
 geopy==2.0.0
+gunicorn==20.0.4
 idna==2.10
 numpy==1.19.2
 pandas==1.1.2
@@ -22,3 +23,4 @@ requests==2.24.0
 six==1.15.0
 sqlparse==0.3.1
 urllib3==1.25.10
+whitenoise==5.2.0
