@@ -1,0 +1,17 @@
+
+
+  <div class="d-flex sbar" id="wrapper">
+
+
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sbar-heading">Gridlex</div>
+      
+      <div class="list-group list-group-flush">
+        <a href="{% url 'create_agents' %}" class="list-group-item list-group-item-action bg-light sbar_state">Upload Agents Data</a>
+        {% for state in states %}
+        <a href="{% url 'nearest_agents' state.id  %}" class="list-group-item list-group-item-action bg-light sbar_state">{{state.start_point}},{{state.start_point.state.name}}</a>
+        {% endfor %}
+      </div>
+    </div>
+
+    </div>

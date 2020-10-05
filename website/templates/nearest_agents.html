@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="agents_section">
+<h5>{{instance.start_point}},{{instance.start_point.state}}</h5>
+
+<table border="" style="" id="agent_table">
+    <thead>
+    <tr>
+        <th><b>Agent ID</b></th>
+        <th><b>Agent Name</b></th>
+        <th><b>Agent City</b></th>
+        <th><b>Agent State</b></th>
+        <th><b>Distance</b></th>
+
+
+
+    </tr>
+    </thead>
+    <tbody>
+    {% for d in data %}
+    <tr>
+
+        <th>{{ d.agent.agent_id }}</th>
+        <th>{{ d.agent.agent_name }}</th>
+        <th>{{  d.agent.address.city  }}</th>
+        <th>{{  d.agent.address.city.state }} </th>
+        <th>{{ d.distance }} KM </th>
+
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+</div>
+
+
+{% endblock %}
