@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 
-static_dev/
+static_dev/assets

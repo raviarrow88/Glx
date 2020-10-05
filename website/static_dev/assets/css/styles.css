@@ -1,0 +1,27 @@
+.sbar{
+  position: fixed;
+  top:0;
+  min-height: 100vh
+}
+
+
+.sbar-heading{
+  padding: 20px 55px;
+      font-size: 25px;
+      color: #4456ac;
+      font-weight: 700;
+
+}
+
+.navbar{
+  margin-left:197px !important
+}
+
+.cleft{
+  margin-left: 220px;
+margin-top: 20px;
+}
+
+.sbar_state{
+  padding:6px !important
+}
